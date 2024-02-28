@@ -1,13 +1,129 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,400&family=Rye&display=swap');
+
+*{
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html{
+  background-color: rgb(32, 32, 32);
+}
+
+.container{
+  padding-top: 24px;
+  color: azure;
+}
+
+.person-card {
+  color: azure;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 80px;
+  margin-right: 80px;
+  justify-content: center;
+  flex-direction: row;
+  width: 380px;
+  margin-bottom: 100px;
+}
+
+.person-card h3 {
+  margin-bottom: 0;
+}
+
+.person-card img {
+  width: 280px;
+  height: 320px;
+}
+
+
+.card-row{
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  justify-content: center;
+  flex-direction: row;
+  background-color: black;
+}
+
+.title{
+  font-family: 'Rye', serif;
+  color: red;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.card{
+  width: 380px;
+  color: azure;
+  padding: 8px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.card-image{
+  display: flex;
+  padding: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.image-div{
+  width: 380px; 
+  color: 'azure';
+}
+
+.not-found{
+  color: azure;
+  font-family: 'Roboto', sans-serif;
+}
+
+.back-container{
+  text-align: right;
+  padding: 8px;
+  margin-right: 24px;
+  font-family: 'Roboto', sans-serif;
+}
+.back{
+  text-decoration: none;
+  color: beige;
+  font-family: 'Roboto', sans-serif;
+  
+}
+.back:hover{
+  color: cadetblue;
+  transition: ease;
+}
+
+.description{
+  font-family: 'Roboto', sans-serif;
+}
+
+.description-child{
+  color: 'azure'; 
+  display: flex; 
+  flex-wrap: wrap;
+  margin-left: 80px;
+  flex-direction: row;
+  margin-right: 80px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: '8px';
+  font-family: 'Roboto, sans-serif';
+  justify-content: center;
+}
+
+.description-table{
+  min-width: 380px;
+  text-align: left;
+}
+
+.description-table p span{
+  text-transform: uppercase; 
+  color: beige;
+}
+
+.aliases, .nationality, .sex, .hair, .eyes, .complexion, .weight, .scars-and-marks, .occupations, .languages, .place-of-birth, .details, .caution, .suspects, .description, .classification, .reward{
+  color: white;
 }
