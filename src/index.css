@@ -3,10 +3,26 @@
 
 *{
   box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
 }
 
 html{
+  background-image: url('../src/assets/img/paper-bg.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   background-color: rgb(32, 32, 32);
+}
+
+.main-title-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  margin: 0px;
+  padding: 16px;
+  background-color: black;
 }
 
 .container{
@@ -15,17 +31,23 @@ html{
 }
 
 .person-card {
-  color: azure;
+  color: red;
   display: flex;
   flex-wrap: wrap;
   margin-left: 80px;
   margin-right: 80px;
   justify-content: center;
-  flex-direction: row;
+  flex-direction: column;
   width: 380px;
   margin-bottom: 100px;
+  font-family: 'Roboto', sans-serif;
 }
 
+.person-title{
+  color: red;
+  padding: 16px;
+  font-family: 'Roboto', sans-serif;
+}
 .person-card h3 {
   margin-bottom: 0;
 }
@@ -33,6 +55,8 @@ html{
 .person-card img {
   width: 280px;
   height: 320px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
 }
 
 
@@ -44,7 +68,7 @@ html{
   margin-bottom: 20px;
   justify-content: center;
   flex-direction: row;
-  background-color: black;
+  /* background-color: rgb(32, 32, 32); */
 }
 
 .title{
@@ -74,6 +98,12 @@ html{
   color: 'azure';
 }
 
+.personal-image {
+  width: 280px;
+  height: 320px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+}
 .not-found{
   color: azure;
   font-family: 'Roboto', sans-serif;
@@ -87,17 +117,16 @@ html{
 }
 .back{
   text-decoration: none;
-  color: beige;
+  color: red;
   font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  transition: ease 0.5s; 
+  font-weight: bold;
   
 }
 .back:hover{
-  color: cadetblue;
-  transition: ease;
-}
-
-.description{
-  font-family: 'Roboto', sans-serif;
+  color: rgb(255, 170, 0);
+  
 }
 
 .description-child{
@@ -111,6 +140,7 @@ html{
   margin-bottom: 40px;
   padding: '8px';
   font-family: 'Roboto, sans-serif';
+  font-size: 24px;
   justify-content: center;
 }
 
@@ -121,9 +151,18 @@ html{
 
 .description-table p span{
   text-transform: uppercase; 
-  color: beige;
+  color:rgb(94, 94, 94);
 }
 
-.aliases, .nationality, .sex, .hair, .eyes, .complexion, .weight, .scars-and-marks, .occupations, .languages, .place-of-birth, .details, .caution, .suspects, .description, .classification, .reward{
-  color: white;
+.publication{
+  margin-top: 24px;
+  margin-bottom: 64px;
+  color: rgb(28, 28, 28);
+  font-family: 'Roboto', sans-serif;
+}
+
+.aliases, .age-range, .nationality, .sex, .hair, .eyes, .complexion, .weight, .scars-and-marks, .occupations, .languages, .place-of-birth, .details, .caution, .remarks, .suspects, .description, .classification, .reward{
+  color: rgb(28, 28, 28);
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 12px;
 }

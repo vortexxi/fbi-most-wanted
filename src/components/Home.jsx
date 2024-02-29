@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { motion } from 'framer-motion';
 
 export const Home = () => {
 
@@ -23,10 +24,19 @@ export const Home = () => {
         <div className='card-row'>
             {wantedPeople.map(person => (
                 <div key={person.uid} className='person-card'>
-                    <h3>{person.title}</h3>
-                    <a href={`/person/${person.uid}`}>
-                        <img src={person.images[0]?.original} alt={person.images[0]?.caption} width='280px' height='330px' loading='lazy' />
-                    </a>
+                    <h3 className='person-title'>{person.title}</h3>
+                    <motion.div 
+                    whileHover={{
+                        scale: 1.05,
+                        // transition: { duration: 0.5 },
+                      }}
+                      transition={{ ease: 'easeInOut'}}
+                    
+                    >
+                        <a href={`/person/${person.uid}`}>
+                            <img src={person.images[0]?.original} alt={person.images[0]?.caption} width='280px' height='330px' loading='lazy' />
+                        </a>
+                    </motion.div>
                 </div>
             ))}
         </div>

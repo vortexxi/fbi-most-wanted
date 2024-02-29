@@ -44,12 +44,12 @@ export const Personal = () => {
         <Link className='back' to='/'>Back</Link>
       </div>
 
-      <h3>{person.title}</h3>
+      <h3 className='person-title'>{person.title}</h3>
       <div className='card-row'>
         {person.images.map(image => (
           <div className='card-image' key={image.original}>
             <div style={{ width: '380px', color: 'azure' }}>
-              <img width='240px' height='320px' src={image.original} alt="Wanted Person" />
+              <img className='personal-image' width='240px' height='320px' src={image.original} alt="Wanted Person" />
             </div>
           </div>
         ))}
@@ -57,6 +57,7 @@ export const Personal = () => {
       <div className='description'>
         <div className='description-child'>
           <div className='description-table'>
+            <p className='publication'>{person.publication}</p>
             <p className='aliases'><span>Aliases:</span> {person.aliases}</p>
             <p className='age-range'><span>Age range:</span> {person.age_range}</p>
             <p className='nationality'><span>Nationality:</span> {person.nationality}</p>
@@ -71,10 +72,11 @@ export const Personal = () => {
             <p className='place-of-birth'><span>Place of birth: </span>{person.place_of_birth}</p>
             <p className='details'><span>Details: </span>{person.details}</p>
             <p className='caution'><span>Caution: </span>{person.caution}</p>
-            <p className='subjects'><span>Suspects: </span>{person.subjects}</p>
+            <p className='remarks'><span>Remarks: </span>{person.remarks}</p>
+            <p className='suspects'><span>Suspects: </span>{person.subjects}</p>
             <p className='description'><span>Description: </span>{person.description}</p>
-            <p className='person-classification'><span>Classification: </span>{person.person_classification}</p>
-            <p className='reward-text'><span>Reward: </span>{person.reward_text}</p>
+            <p className='classification'><span>Classification: </span>{person.person_classification}</p>
+            <p className='reward'><span>Reward: </span>{person.reward_text}</p>
           </div>
         </div>
       </div>
