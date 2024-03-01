@@ -122,7 +122,6 @@ html{
   text-transform: uppercase;
   transition: ease 0.5s; 
   font-weight: bold;
-  
 }
 .back:hover{
   color: rgb(255, 170, 0);
