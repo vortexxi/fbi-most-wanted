@@ -3,7 +3,7 @@
   "name": "Data from FBI most wanted",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "fbi.ico",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
